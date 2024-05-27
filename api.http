@@ -1,0 +1,28 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo evento",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/9cef4698-b489-4d53-a6c7-fbe8646d90aa/attendees
+Content-Type: application/json
+
+{
+  "name": "João Vitor",
+  "email": "jv.dossantos012@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/9cef4698-b489-4d53-a6c7-fbe8646d90aa
+Content-Type: application/json
+
+### 
+
+GET http://localhost:3333/attendees/5/badge
+Content-Type: application/json
